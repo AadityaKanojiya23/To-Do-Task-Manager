@@ -1,0 +1,114 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.main-heading {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+
+#entrySection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#workInput, #dateInput {
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: small;
+}
+
+#addBtn {
+    padding: 6.5px 10px;
+    font-size: small;
+    background-color: rgb(23, 196, 32);
+    color: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: rgb(19, 160, 27);
+}
+
+
+#displayWork {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr 0.25fr; /* 3 columns: item | date | button */
+    gap: 1px;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#displayWork span {
+    background-color: #fff;
+    padding: 8px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    text-align: center;
+    font-size: small;
+}
+
+#displayWork button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+#displayWork button:hover {
+    background-color: darkred;
+}
+#displayWork {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.todo-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.todo-row span {
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.todo-row button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.todo-row button:hover {
+    background-color: darkred;
+}
